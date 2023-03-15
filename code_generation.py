@@ -11,7 +11,6 @@ def create_code(prompt):
     response = openai.Completion.create(
         model="code-davinci-002",
         prompt=f"""
-            Python Language
             {prompt}
         """,
         temperature=0,
