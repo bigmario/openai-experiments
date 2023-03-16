@@ -10,9 +10,7 @@ openai.api_key = os.getenv("OPENAI_API_KEY")
 def create_code(prompt):
     response = openai.Completion.create(
         model="code-davinci-002",
-        prompt=f"""
-            {prompt}
-        """,
+        prompt=prompt,
         temperature=0,
         max_tokens=256,
         top_p=1,
