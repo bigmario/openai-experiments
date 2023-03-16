@@ -20,7 +20,6 @@ restart_sequence = "\nHuman: "
 def create_generation():
     response = openai.Completion.create(
         model="text-davinci-003",
-        # messages=[{"role": "user", "content": prompt + start_sequence}],
         prompt=prompt + start_sequence,
         temperature=1,
         max_tokens=500,
