@@ -1,3 +1,7 @@
+"""
+code-davinci-002 DISCONTINUED
+"""
+
 import os
 from dotenv import load_dotenv
 import openai
